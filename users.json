@@ -1,0 +1,62 @@
+{
+    "Lance": {
+        "password": "Lance",
+        "pin": "2903",
+        "balance": 10000000000000,
+        "account_no": "290305"
+    },
+    "Shervin": {
+        "password": "Shervin",
+        "pin": "2805",
+        "balance": 500000,
+        "account_no": "280505"
+    },
+    "Arnold": {
+        "password": "Arnold",
+        "pin": "1904",
+        "balance": 1000000000000000000,
+        "account_no": "000001"
+    },
+    "Abhijeet": {
+        "password": "Abhijeet",
+        "pin": "0405",
+        "balance": 10000499999,
+        "account_no": "040505"
+    },
+    "Kenneth": {
+        "password": "Kenneth",
+        "pin": "2310",
+        "balance": 1001,
+        "account_no": "231005"
+    },
+    "Glenn": {
+        "password": "Glenn",
+        "pin": "0305",
+        "balance": 70500000,
+        "account_no": "030505"
+    },
+    "Jaswin": {
+        "password": "Jaswin",
+        "pin": "0506",
+        "balance": 10000000500000,
+        "account_no": "050605"
+    },
+    "Jude": {
+        "password": "Jude",
+        "pin": "1010",
+        "balance": 500000,
+        "account_no": "101008"
+    },
+    "test": {
+        "password": "test",
+        "pin": "0000",
+        "balance": 500000,
+        "account_no": "506832"
+    },
+    "Rohan": {
+        "password": "thane",
+        "pin": "1234",
+        "balance": 10000998999,
+        "account_no": "574283"
+    }
+}

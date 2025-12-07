@@ -1,0 +1,22 @@
+{
+    "req_1763281527754": {
+        "request_id": "req_1763281527754",
+        "requester_acc_no": "290305",
+        "requester_username": "Lance",
+        "source_acc_no": "280505",
+        "source_username": "Shervin",
+        "amount": 1000,
+        "timestamp": "2025-11-16 13:55:27",
+        "status": "approved"
+    },
+    "req_1763284146946": {
+        "request_id": "req_1763284146946",
+        "requester_acc_no": "290305",
+        "requester_username": "Lance",
+        "source_acc_no": "280505",
+        "source_username": "Shervin",
+        "amount": 2000,
+        "timestamp": "2025-11-16 14:39:06",
+        "status": "denied"
+    }
+}
