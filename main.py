@@ -12,7 +12,7 @@ import requests # For making API calls to Ollama
 # Constants
 DATA_FILE = "users.json"
 TRANSACTION_LOG_FILE = "transactions.log" 
-REQUESTS_FILE = "pending_requests.json" # New: To store pending requests
+REQUESTS_FILE = "pending_requests.json" 
 CURRENCY = "USD"
 MINIMUM_BALANCE = 1000
 DEFAULT_STARTING_BALANCE = 500000
@@ -149,7 +149,7 @@ class BankApp:
         username = self.login_user.get()
         password = self.login_pass.get()
         
-        self.data = load_data(DATA_FILE) # Refresh data
+        self.data = load_data(DATA_FILE) 
 
         if username in self.data and self.data[username].get("password") == password:
             self.current_user = username
@@ -258,7 +258,7 @@ class BankApp:
             )
             button_row += 1
             
-        # NEW: Check for pending requests
+        
         all_requests = load_data(REQUESTS_FILE)
         pending_for_me = []
         if isinstance(all_requests, dict):
@@ -592,14 +592,14 @@ class BankApp:
         self._handle_transaction_result("Success", base_message)
         self.show_dashboard()
 
-    # NEW, RE-WRITTEN "REQUEST MONEY" LOGIC
+    
     
     def show_request_money_page(self):
         """Shows the page for *creating* a money request."""
         self._create_transaction_page(
             "Request Funds (Pull)", 
             ["Source Account No:", "Amount to Request:"], 
-            self.create_money_request, # Calls the new function
+            self.create_money_request, 
             "warning"
         )
 
@@ -643,7 +643,7 @@ class BankApp:
         self.show_dashboard()
         
 
-    # NEW PAGE AND FUNCTIONS FOR APPROVING REQUESTS
+    # Page and Functions for  Approving Requests
 
     def show_pending_requests_page(self):
         """Displays all pending requests for the current user."""
@@ -744,7 +744,7 @@ class BankApp:
         log_transaction(request.get('requester_acc_no'), "Receive (Request)", amount, "Success", self.current_acc_no)
         
         messagebox.showinfo("Success", "Request approved and money sent!")
-        self.show_pending_requests_page() # Refresh the list
+        self.show_pending_requests_page() 
 
     def deny_request(self):
         """Handles the logic for denying a selected money request."""
@@ -762,7 +762,7 @@ class BankApp:
         save_data(self.all_requests, REQUESTS_FILE)
         
         messagebox.showinfo("Request Denied", "The money request has been successfully denied.")
-        self.show_pending_requests_page() # Refresh the list
+        self.show_pending_requests_page() 
 
 
 if __name__ == "__main__":
